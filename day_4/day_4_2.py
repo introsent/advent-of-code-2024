@@ -13,5 +13,4 @@ for x, xv in enumerate(chars_matrix):
             if ((str(l1) == "MAS" or str(l1) == "SAM") and (str(l2) == "MAS" or str(l2) == "SAM")):
                 sum+=1
 
-
 print(sum)
