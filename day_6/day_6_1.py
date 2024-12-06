@@ -2,7 +2,7 @@ map = []
 start_pos_guard_x = 0
 start_pos_guard_y = 0
 
-with open('day_6/data.txt', 'r') as file:
+with open('day_6/test_data.txt', 'r') as file:
     for inx_y, line in enumerate(file):
         line_to_char_arr = []
         for inx_x, char in enumerate(line.replace("\n", "")):
