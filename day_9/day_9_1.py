@@ -1,10 +1,7 @@
 blocks = []
 count_non_dots = 0
-
-iterations_count = 0
-with open('day_9/data.txt', 'r') as file:
+with open('day_9/test_data.txt', 'r') as file:
     for line in file:
-        iterations_count += 1
         for inx, char in enumerate(line.replace("\n", "")):
             if (inx % 2 == 0):
                 ID = inx // 2
@@ -35,7 +32,8 @@ for inx, char in enumerate(blocks):
 sum = 0
 
 for inx, char in enumerate(moved_blocks):
-    sum += int(char) * inx
+    if char != '.':
+        sum += int(char) * inx
 
 print(sum)   
 
