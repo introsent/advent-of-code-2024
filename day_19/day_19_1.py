@@ -29,9 +29,3 @@ with open('day_19/data.txt', 'r') as file:
                 count_available += 1
 
 print(count_available)
-         
-    
-
-        
-
-
